@@ -9,8 +9,8 @@ main(List<String> arguments) async {
   var pool = new ConnectionPool(
       host: 'localhost',
       port: 3306,
-      user: 'bryan',
-      password: 'password',
+      user: 'root',
+      // password: '', //omit password if it is blank
       db: 'school',
       max: 5
   );

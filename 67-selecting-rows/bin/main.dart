@@ -9,7 +9,7 @@ main(List<String> arguments) async {
       host: 'localhost',
       port: 3306,
       user: 'root',
-      password: '',
+      // password: '', //omit password if it is blank
       db: 'school',
       max: 5
   );
