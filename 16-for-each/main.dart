@@ -3,12 +3,16 @@ main(List<String> arguments) {
 
   print(people);
 
-  for(int i = 0; i < people.length; i++) {
+  print("using for loop to iterate a list");
+  for (int i = 0; i < people.length; i++) {
     print('Person at ${i} is ${people[i]}');
   }
 
-  people.forEach((String person) {
-    print(person);
+  print("using forEach loop to iterate a list");
+  int i = 0;
+  people.forEach((people) {
+    print('Person at ${i} is ${people}');
+    i++;
   });
 
   /* in 'for' loop you the index value as well as the list
