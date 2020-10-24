@@ -17,4 +17,19 @@ main(List<String> arguments) {
   numbers.add(2);
   numbers.add(3);
   //numbers.add('cats'); - ERROR !
+  
+  /*******************************************************************
+  **** Adding one list data in another list using spread operator ****
+  *******************************************************************/
+  
+  var xmen = ['jean', 'cyclops', 'magneto'];
+  var naruto = ['sasuke', 'gaara', 'kakaashi'];
+  
+  var power = ['php', 'css', ...naruto, ...xmen];
+  
+  // print(power.length);
+  
+  for(int i=0; i<power.length; i++){
+    print(power[i]);
+  }
 }
